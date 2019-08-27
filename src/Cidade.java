@@ -50,6 +50,12 @@ public class Cidade { //obs toda as classes em Java começam com a letra maiscul
 	public void setQuantidadeVitimas(Integer quantidadeVitimas) {
 		this.quantidadeVitimas = quantidadeVitimas;
 	}
+
+	@Override
+	public String toString() {
+		return "Cidade [codigoCidade=" + codigoCidade + ", nomeCidade=" + nomeCidade + ", quantidadeVeiculo="
+				+ quantidadeVeiculo + ", quantidadeVitimas=" + quantidadeVitimas + "]";
+	}
 	
 
 }
