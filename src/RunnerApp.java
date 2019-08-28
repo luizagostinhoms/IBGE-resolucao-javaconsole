@@ -35,16 +35,16 @@ public class RunnerApp {
 			menu = valorMenu.nextInt();
 			switch (menu) {
 			case 1:
-				Relatorios.descobriCidadeComMaiorNAcidentes(cidades, numeroCidades);
+				Relatorios.descobriCidadeComMaiorNAcidentes(cidades);
 				break;
 			case 2:
-				Relatorios.descobriCidadeComMenorNAcidentes(cidades, numeroCidades);
+				Relatorios.descobriCidadeComMenorNAcidentes(cidades);
 				break;
 			case 3:
 				Relatorios.mediaVeiculosCidades(cidades, numeroCidades);
 				break;
 			case 4:
-				Relatorios.mediaAcidentesCidadesMenor2000Veiculos(cidades, numeroCidades);
+				Relatorios.mediaAcidentesCidadesMenor2000Veiculos(cidades);
 				break;
 			case 0:
 				System.out.println("\nSaindo da aplicação");

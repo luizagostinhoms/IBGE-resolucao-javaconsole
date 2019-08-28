@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Relatorios {
 
-	public static void descobriCidadeComMaiorNAcidentes(List<Cidade> cidades, Integer numeroCidades) {
+	public static void descobriCidadeComMaiorNAcidentes(List<Cidade> cidades) {
 		Integer maiorNAcidentes = cidades.get(0).getQuantidadeVitimas();
 		Cidade cidadeMaiorAcidadente = cidades.get(0);
 		for (Cidade cidade : cidades) {
@@ -18,7 +18,7 @@ public class Relatorios {
 		
 	}
 
-	public static void descobriCidadeComMenorNAcidentes(List<Cidade> cidades, Integer numeroCidades) {
+	public static void descobriCidadeComMenorNAcidentes(List<Cidade> cidades) {
 		Integer menorNAcidentes = cidades.get(0).getQuantidadeVitimas();
 		Cidade cidadeMenorAcidadente = cidades.get(0);
 		for (Cidade cidade : cidades) {
@@ -45,7 +45,7 @@ public class Relatorios {
 		System.out.println("\nA méida de veiculos nas cidades juntas é: " + mediaVeiculo);
 	}
 
-	public static void mediaAcidentesCidadesMenor2000Veiculos(List<Cidade> cidades, Integer numeroCidades) {
+	public static void mediaAcidentesCidadesMenor2000Veiculos(List<Cidade> cidades) {
 		
 		Integer totalAcidenteTransito = 0;
 		Integer countCidadesMenor2000 = 0;
