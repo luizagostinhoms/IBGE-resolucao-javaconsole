@@ -22,7 +22,7 @@ Analisando, assim, o nosso caso problematizador, você deverá realizar um algor
 
 ===========================================
 
-Esse problema é uma evolução do código desenvolvimento previamente na lingaugem C:
+Esse prograna é uma evolução do código desenvolvido previamente na lingaugem C:
 
 https://github.com/luizagostinhoms/IBGE-resolucao5-menurelatorios.git
 
