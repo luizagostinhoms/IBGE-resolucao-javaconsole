@@ -27,10 +27,49 @@ public class RunnerApp {
 			System.out.println(cidade);
 		}
 		
+		Integer menu = 5;
+		Scanner valorMenu = new Scanner(System.in);
+		
+		while (menu != 0) {
+			imprimirMenuDeInformacoes();
+			menu = valorMenu.nextInt();
+			switch (menu) {
+			case 1:
+				Relatorios.descobriCidadeComMaiorNAcidentes(cidades, numeroCidades);
+				break;
+			case 2:
+				Relatorios.descobriCidadeComMenorNAcidentes(cidades, numeroCidades);
+				break;
+			case 3:
+				Relatorios.mediaVeiculosCidades(cidades, numeroCidades);
+				break;
+			case 4:
+				Relatorios.mediaAcidentesCidadesMenor2000Veiculos(cidades, numeroCidades);
+				break;
+			case 0:
+				System.out.println("\nSaindo da aplicação");
+				break;
+			default:
+				System.out.println("\nValor inválido");
+				break;
+			}
+		}
+		
 	}
 
 
-	
+	private static void imprimirMenuDeInformacoes() {
+		System.out.println("\n\n----RELATÓRIOS----- \n\n");
+	    System.out.println("\nDigite a opção desjada para: ");
+	    System.out.println("\n1 - DESCOBRIR CIDADE COM MAIOR NUMERO DE ACIDENTES: ");
+	    System.out.println("\n2 - DESCOBRIR CIDADE COM MENOR NUMERO DE ACIDENTES: ");
+	    System.out.println("\n3 - MÉDIA DE VEICULOS ENTRE AS CIDADES: ");
+	    System.out.println("\n4 - MÉDIA DE ACIDENTES ENTRE AS CIDADES COM MENOS DE 2000 VEICULOS: ");
+	    System.out.println("\n0 - SAIR DA APLICAÇÃO: ");
+	    System.out.println("\nopcaçõ:");
+	}
+
+
 	private static List<Cidade> popularDadosCidade(Integer numeroCidades) {
 		
 		System.out.println("\n\nAgora digite os dados da cidade: \n\n");
