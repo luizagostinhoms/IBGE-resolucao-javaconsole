@@ -2,8 +2,6 @@
 Resolução do problema do IBGE proposto, utilizando a linguagem Java
 
 
-Resolução do problema do IBGE proposto, utilizando a linguagem Java.
-
 O problema:
 
 O IBGE (Instituto Brasileiro de Geografia e Estatística) desejou realizar uma estatística nas cidades pertencentes ao estado do Paraná, verificando dados sobre acidentes de trânsito. Neste estudo, precisava-se obter alguns dados, que podemos verificar abaixo:
